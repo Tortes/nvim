@@ -14,7 +14,7 @@ function toggle_tree()
   end
 end
 
-vim.api.nvim_set_keymap('n', '<C-t>', '<cmd>lua toggle_tree()<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>e', '<cmd>lua toggle_tree()<CR>', { noremap = true, silent = true })
 
 -- Setting for telescope
 vim.api.nvim_set_keymap('n', '<leader>ff', ':lua require("telescope.builtin").find_files()<CR>', { noremap = true, silent = true })
