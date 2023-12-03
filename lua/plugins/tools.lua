@@ -1,8 +1,8 @@
 return {
   {
     "xeluxee/competitest.nvim",
-    ft = { "cpp" },
-    dependencies = {
+      ft = { "cpp" },
+      dependencies = {
       "MunifTanjim/nui.nvim",
     },
 
@@ -109,14 +109,6 @@ return {
     },
   },
   {
-    "voldikss/vim-translator",
-    event = { "BufReadPre", "BufNewFile" },
-    config = function()
-      vim.keymap.set("n", "<leader>tr", "<Plug>TranslateW", {})
-      vim.keymap.set("v", "<leader>tr", "<Plug>TranslateWV", {})
-    end,
-  },
-  {
     "nvimdev/guard.nvim",
     ft = vim.g.fts,
     dependencies = {
@@ -133,22 +125,6 @@ return {
         vim.keymap.set({ "n", "v" }, "<leader>fm", "<cmd>GuardFmt<CR>", {}),
       })
     end
-  },
-  {
-    'iamcco/markdown-preview.nvim',
-    build = "cd app && yarn install",
-    ft = { "markdown" },
-    config = function()
-      vim.g.mkdp_browser = vim.g.browser
-    end,
-  },
-  {
-    "img-paste-devs/img-paste.vim",
-    ft = { "markdown" },
-    config = function()
-      vim.keymap.set("n", "<leader>p", ":call mdip#MarkdownClipboardImage()<CR>", {})
-      vim.g.PasteImageFunction = 'g:MarkdownPasteImage'
-    end,
   },
 }
 
