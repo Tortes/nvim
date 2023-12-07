@@ -116,4 +116,9 @@ return {
       }
     end
   },
+  { 
+    "sitiom/nvim-numbertoggle",
+    event = "VeryLazy",
+    enabled = true,
+  },
 }
