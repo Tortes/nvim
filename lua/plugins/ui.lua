@@ -55,20 +55,10 @@ return {
       require("nvim-treesitter.configs").setup({
         ensure_installed = {
           "bash",
-          "c",
           "cpp",
-          "dart",
-          "html",
           "go",
-          "java",
-          "javascript",
           "lua",
-          "markdown",
-          "markdown_inline",
-          "prisma",
           "python",
-          "query",
-          "typescript",
           "vim"
         },
         highlight = {

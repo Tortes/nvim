@@ -3,16 +3,16 @@ return{
     lazy = false, 
     priority = 1000 
   },
-  --{
-  --  'Kicamon/gruvbox.nvim',
-  --  lazy = false,
-  --  priority = 1000,
-  --  config = function()
-  --    vim.cmd("colorscheme gruvbox")
-  --    vim.fn.sign_define("DiagnosticSignError", { text = "🤣", texthl = "DiagnosticSignError" })
-  --    vim.fn.sign_define("DiagnosticSignWarn", { text = "🧐", texthl = "DiagnosticSignWarn" })
-  --    vim.fn.sign_define("DiagnosticSignInfo", { text = "🫠", texthl = "DiagnosticSignInfo" })
-  --    vim.fn.sign_define("DiagnosticSignHint", { text = "🤔", texthl = "DiagnosticSignHint" })
-  --  end,
-  --},
+  {
+    "neanias/everforest-nvim",
+    version = false,
+    lazy = false,
+    priority = 1000, -- make sure to load this before all the other start plugins
+    -- Optional; default configuration will be used if setup isn't called.
+    config = function()
+      require("everforest").setup({
+        -- Your config here
+      })
+    end,
+  }
 }
