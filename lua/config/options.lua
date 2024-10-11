@@ -18,3 +18,11 @@ vim.api.nvim_set_var("loaded_netrwPlugin", 1)
 -- vim.wo.relativenumber = true
 vim.wo.number = true
 
+-- Transparent
+vim.cmd [[
+  highlight Normal guibg=none
+  highlight NonText guibg=none
+  highlight Normal ctermbg=none
+  highlight NonText ctermbg=none
+  highlight NvimTreeNormalNC guibg=none
+]]

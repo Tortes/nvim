@@ -54,16 +54,16 @@ local nmappings = {
   { from = '<leader>j',        to = '<c-w>j',                                             mode = mode_n  },
   { from = '<leader>k',        to = '<c-w>k',                                             mode = mode_n  },
   { from = '<leader>l',        to = '<c-w>l',                                             mode = mode_n  },
-  --{ from = '<up>',             to = '<cmd>res +5<CR>',                                    mode = mode_n  },
-  --{ from = '<down>',           to = '<cmd>res -5<CR>',                                    mode = mode_n  },
-  --{ from = '<left>',           to = '<cmd>vertical resize-5<CR>',                         mode = mode_n  },
-  --{ from = '<right>',          to = '<cmd>vertical resize+5<CR>',                         mode = mode_n  },
-  { from = '<leader>vim',      to = '<cmd>edit ~/.config/nvim/init.lua<CR>',              mode = mode_n  },
     -- buffers & tab
   { from = 'tn',               to = '<cmd>tabnext<CR>',                                   mode = mode_n  },
   { from = 'tp',               to = '<cmd>tabprevious<CR>',                               mode = mode_n  },
   { from = 'tu',               to = '<cmd>tabnew<CR>',                                    mode = mode_n  },
   { from = 'tt',               to = '<cmd>silent 20 Lex<CR>',                             mode = mode_n  },
+  --{ from = '<up>',             to = '<cmd>res +5<CR>',                                    mode = mode_n  },
+  --{ from = '<down>',           to = '<cmd>res -5<CR>',                                    mode = mode_n  },
+  --{ from = '<left>',           to = '<cmd>vertical resize-5<CR>',                         mode = mode_n  },
+  --{ from = '<right>',          to = '<cmd>vertical resize+5<CR>',                         mode = mode_n  },
+  { from = '<leader>vim',      to = '<cmd>edit ~/.config/nvim/init.lua<CR>',              mode = mode_n  },
 }
 for _, mapping in ipairs(nmappings) do
   vim.keymap.set(mapping.mode or 'n', mapping.from, mapping.to, { noremap = true })

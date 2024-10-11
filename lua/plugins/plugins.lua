@@ -26,7 +26,7 @@ return {
   },
 
   -- friendly snippets
-  { "rafamadriz/friendly-snippets" },
+--  { "rafamadriz/friendly-snippets" },
 
   -- LuaSnip
   {

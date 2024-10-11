@@ -93,21 +93,21 @@ return {
       buftypes = {},
     }
   },
-  {
-    "folke/flash.nvim",
-    event = { "BufReadPre", "BufNewFile" },
-    opts = {},
-    keys = {
-      {
-        "<ESC>",
-        mode = { "n" },
-        function()
-          require("flash").jump()
-        end,
-        desc = "Flash"
-      },
-    },
-  },
+  -- {
+  --   "folke/flash.nvim",
+  --   event = { "BufReadPre", "BufNewFile" },
+  --   opts = {},
+  --   keys = {
+  --     {
+  --       "<ESC>",
+  --       mode = { "n" },
+  --       function()
+  --         require("flash").jump()
+  --       end,
+  --       desc = "Flash"
+  --     },
+  --   },
+  -- },
   {
     "nvimdev/guard.nvim",
     ft = vim.g.fts,
@@ -131,6 +131,6 @@ return {
     config = function ()
     require('neoscroll').setup {}
     end
-}
+  }
 }
 
